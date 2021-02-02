@@ -9,15 +9,20 @@ body{
 }
 
 .card{
-    height: 350px;
-    width: 400px;
-    min-width: 250px;
+    height: 450px;
+    width: 300px;
+    min-width: 275px;
     background-color: #17141d;    
     box-shadow: -1rem 0 3rem #000;
     border-radius: 1.5rem;
     padding: 1.5rem;
     
     transition: 0.5s;
+
+    display: grid;
+    grid-template-rows: 60% 1fr 1fr;
+    align-items: center;
+
 }
 
 .author-avatar img{
@@ -40,6 +45,7 @@ body{
 
 .card-list{
     display: flex;
+    justify-content: center;
     margin: 3rem;
 }
 
@@ -59,6 +65,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.5rem;
+    height: 30px;
 }
 
 .tags a{
@@ -68,8 +75,8 @@ body{
     font-size: .66rem;
     border: 3px solid #28242f;
     border-radius: 2rem;
-    padding: .2rem .85rem .25rem;
-    margin: 0 0.25rem 0.25rem;
+    padding: .2rem .5rem .25rem;
+    margin: 0 0.1rem 0.25rem;
 }
 
 .card-header h2 {
