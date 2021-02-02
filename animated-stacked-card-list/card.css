@@ -16,9 +16,6 @@ body{
     box-shadow: -1rem 0 3rem #000;
     border-radius: 1.5rem;
     padding: 1.5rem;
-
-    /* display: flex;
-    flex-direction: column; */
     
 }
 
@@ -38,4 +35,9 @@ body{
 .author-name-prefix {
     font-weight: 700;
     color: #7a7a8c;
+}
+
+.card-list{
+    display: flex;
+    margin: 3rem;
 }
