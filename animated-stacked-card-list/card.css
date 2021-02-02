@@ -17,6 +17,7 @@ body{
     border-radius: 1.5rem;
     padding: 1.5rem;
     
+    transition: 0.5s;
 }
 
 .author-avatar img{
@@ -40,4 +41,16 @@ body{
 .card-list{
     display: flex;
     margin: 3rem;
+}
+
+.card:not(:first-child){
+    margin-left: -130px;
+}
+
+.card:hover{
+    transform: translateY(-1rem);
+}
+
+.card:hover ~ .card { 
+    transform: translateX(130px);
 }
