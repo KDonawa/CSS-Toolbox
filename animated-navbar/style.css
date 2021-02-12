@@ -1,0 +1,90 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 6rem;
+  padding: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  height: 100%;
+  width: 5rem;
+  transition: width 500ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  margin: 1rem 0rem;
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: var(--text-primary);
+  filter: grayscale(100%) opacity(0.5);
+  transition: var(--transition-speed);
+}
+
+.link-text {
+  display: none;
+  margin: 0 auto;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin-left: 1.5rem;
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.navbar:hover {
+  width: 15rem;
+}
+
+.navbar:hover .link-text {
+  display: inline;
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
