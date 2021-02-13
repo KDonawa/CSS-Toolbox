@@ -26,6 +26,10 @@ main {
   transition: width 500ms ease;
 }
 
+.navbar:hover {
+  width: 15rem;
+}
+
 .navbar-nav {
   list-style: none;
   display: flex;
@@ -51,9 +55,19 @@ main {
   transition: var(--transition-speed);
 }
 
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
 .link-text {
   display: none;
   margin: 0 auto;
+}
+
+.navbar:hover .link-text {
+  display: inline;
 }
 
 .nav-link svg {
@@ -78,11 +92,12 @@ main {
   transition: var(--transition-speed);
 }
 
-.logo svg {
-  transition: var(--transition-speed);
-}
 .navbar:hover .logo-text {
   left: 1.5rem;
+}
+
+.logo svg {
+  transition: var(--transition-speed);
 }
 
 .navbar:hover .logo svg {
@@ -103,16 +118,8 @@ main {
   transition: var(--transition-speed);
 }
 
-.navbar:hover {
-  width: 15rem;
+@media (min-width: 600px) {
 }
 
-.navbar:hover .link-text {
-  display: inline;
-}
-
-.nav-link:hover {
-  filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+@media (max-width: 600px) {
 }
